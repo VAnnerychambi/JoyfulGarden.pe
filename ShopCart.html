@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!--Tittle -->
+    <title>Shopping-Cart</title>
+    <!--Link-Icon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://static-00.iconduck.com/assets.00/checkout-icon-512x497-9zy9ouz4.png">
+    <!--Link-CSS -->
+    <link rel="stylesheet" href="./ShopCart.css">
+    <!--Link-Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Link-sweetalert-2 -->
+    <link rel="stylesheet" href="/css/ShopCart.css">
+</head>
+
+<body>
+    <section class="container-sh">
+        <div class="container-sh-products">
+            <div class="text-sh">
+                <a class="radius-sh" href="tienda.html"><i class="fa-solid fa-chevron-left"></i></a>
+                <div class="text-sh-container">
+                    <h1>Carrito de Compras</h1>
+                    <p>Tienes 4 Productos en tu Carrito de Compra</p>
+                </div>
+            </div>
+            <div class="container-products-card">
+                <figure class="container-img-card">
+                    <img src="./img/rosa1.jpg" alt="">
+                </figure>
+                <div class="container-description-card">
+                    <h3>Producto</h3>
+                    <p>Descripción del Producto</p>
+                </div>
+                <div class="container-icons-card">
+                    <i class="fa-solid fa-minus"></i>
+                    <h4>1</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3 class="cantidad">S/.25.00</h3>
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container-products-card">
+                <figure class="container-img-card">
+                    <img src="./img/tulipan1.jpg" alt="">
+                </figure>
+                <div class="container-description-card">
+                    <h3>Producto</h3>
+                    <p>Descripción del Producto</p>
+                </div>
+                <div class="container-icons-card">
+                    <i class="fa-solid fa-minus"></i>
+                    <h4>1</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3 class="cantidad">S/.18.00</h3>
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container-products-card">
+                <figure class="container-img-card">
+                    <img src="./img/tulipan4.jpg" alt="">
+                </figure>
+                <div class="container-description-card">
+                    <h3>Producto</h3>
+                    <p>Descripción del Producto</p>
+                </div>
+                <div class="container-icons-card">
+                    <i class="fa-solid fa-minus"></i>
+                    <h4>1</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3 class="cantidad">S/.35.00</h3>
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container-products-card">
+                <figure class="container-img-card">
+                    <img src="./img/caja4.jpg" alt="">
+                </figure>
+                <div class="container-description-card">
+                    <h3>Producto</h3>
+                    <p>Descripción del Producto</p>
+                </div>
+                <div class="container-icons-card">
+                    <i class="fa-solid fa-minus"></i>
+                    <h4>1</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3 class="cantidad">S/.70.00</h3>
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="container-paymethod">
+            <h1>Detalle de Tarjetas</h1>
+            <div class="container-cards-form">
+                <h1>Tipo de tarjeta</h1>
+                <div class="container-main-cards">
+                    <div class="container-card-pay">
+                        <img src="/img/img-visa.png" alt="">
+                    </div>
+                    <div class="container-card-pay">
+                        <img src="/img/img-masterCard.png" alt="">
+                    </div>
+                    <div class="container-card-pay">
+                        <img src="/img/img-payPal.png" alt="">
+                    </div>
+                    <div class="container-card-pay">
+                        <img src="/img/img-payPal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-name input-container">
+                    <label for="">Nombre</label>
+                    <input type="text" name="" id="" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="input-numb input-container">
+                    <label for="">Numero de Tarjeta</label>
+                    <input type="text" placeholder="1111 2222 3333 4444" class="form-control">
+                </div>
+                <div class="container-target">
+                    <div class="num-tg">
+                        <label for="">Fecha de Tarjeta</label>
+                        <input type="text" id="fecha" name="fecha" placeholder="MM/AA" class="form-control">
+                    </div>
+                    <div class="num-tg">
+                        <label for="">CVV</label>
+                        <input type="text" placeholder="123" class="form-control">
+                    </div>
+                </div>
+            </form>
+            <div class="container-pay-text">
+                <div class="igv">
+                    <h3>Subtotal</h3>
+                    <h3>IGV(%18)</h3>
+                    <h3>Total</h3>
+                </div>
+                <div class="pay-price">
+                    <h3>S/.00.00</h3>
+                    <h3>S/.00.00</h3>
+                    <h3>S/.00.00</h3>
+                </div>
+            </div>
+
+            <a href="#" id="btn-send">
+                <p>S/.00.00</p>
+                <span>Pagar <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+    <script src="/js/shopCart.js"></script>
+    <!--script-SweetAlert-2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <!--Font-Awesome -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
